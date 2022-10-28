@@ -10,7 +10,7 @@ function App() {
           <li> <a href=""> Hakkımda   </a> </li>
           <li> <a href=""> Blog       </a> </li>
           <li> <a href=""> Seyehatlerim </a> </li>
-          <li> <a href=""> Rifa tDinc</a> </li>
+          <li> <a href=""> Rifat Dinc</a> </li>
         </ul>
       </header>
     </div>
