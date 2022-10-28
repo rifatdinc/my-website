@@ -1,0 +1,31 @@
+.App {
+  background-color: #282c34;
+  font-size: calc(10px + 2vmin);
+  text-align: center;
+
+}
+
+.navbarParent {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbarParent>li {
+  float: left;
+}
+
+.navbarParent>li>a {
+  display: block !important;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+li a:hover {
+  background-color: #111;
+}
