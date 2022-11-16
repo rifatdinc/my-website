@@ -1,18 +1,24 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
+import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from "./components/NavBar";
+import Banner  from "./components/Banner";
+import { Skills } from "./components/Skills";
+import Projects from "./components/Projects";
+import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
+import { Outlet } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <ul className="navbarParent">
-          <li> <a href=""> Ana Sayfa  </a> </li>
-          <li> <a href=""> Hakkımda   </a> </li>
-          <li> <a href=""> Blog       </a> </li>
-          <li> <a href=""> Seyehatlerim </a> </li>
-          <li> <a href=""> Rifat Dinc</a> </li>
-        </ul>
-      </header>
+      <Outlet />
+      <Navbar />
+      <Banner />
+
+      <Projects />
+      <Contact />
+      <Footer />
     </div>
   );
 }

@@ -4,10 +4,29 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { Footer } from './components/Footer';
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+} from "react-router-dom";
+import Apps from './Apps';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [{
+      path: '/Blog',
+      element:<Apps/>,
+    }]
+
+  }
+]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
