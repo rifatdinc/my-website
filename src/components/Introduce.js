@@ -51,12 +51,12 @@ const Introduce = () => {
         }
     }
     return (
-        <TrackVisibility>
+        <TrackVisibility className='Introduce'>
             {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                     <h1>{`Hi! I'm Rıfat`} <span className="txt-rotate" dataPeriod={delta} data-rotate=' [ "Backend Developer", "NodeJS Developer", "Python Developer" ];'><span className="wrap">{text}</span></span></h1>
                     <p>Merhaba Ben Rıfat Dinç, Yazılım ve Network Alanında kendimi geliştiriyorum. Burada bildiklerimi unutmamak için not defteri gibi kullanıp ve sizlerle paylaşıyorum...</p>
-                    <button onClick={() => <Link to='/projects'></Link>}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                    <button onClick={() => <Link to='/projects'></Link>}>Hakkımda  <ArrowRightCircle size={25} /></button>
                 </div>}
         </TrackVisibility>
     )
