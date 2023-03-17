@@ -1,0 +1,33 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* burada sol ve sağ boşluklar ekleyebilirsiniz */
+  }
+.blog-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .blog-post {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blog-post h3 {
+    margin-top: 0;
+  }
+  
+  .read-more {
+    display: block;
+    margin-top: 10px;
+    text-align: right;
+    text-decoration: none;
+    color: #0077cc;
+  }
+  
+  .read-more:hover {
+    text-decoration: underline;
+  }
