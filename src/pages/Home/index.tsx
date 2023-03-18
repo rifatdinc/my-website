@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 import posts from "../../data/posts.json";
 // 
 const Home: FC = () => {
-  const [postList, setPostList] = useState(posts);
+  const [postList] = useState(posts);
 
   return (
     <div className="container">
-      <h2>Welcome to my React Blog!</h2>
+      <h2 className='welcome'>Welcome to my React Blog!</h2>
       <p>Merhaba, ben Rifat. Yazılım geliştirme ve veri bilimi alanlarında çalışıyorum. Kendimi sürekli geliştirmeye ve öğrenmeye adadım. Bu site, benim çalışmalarımı ve projelerimi paylaşmak için bir platformdur. Burada, yazılım geliştirme, veri bilimi, makine öğrenimi ve yapay zeka gibi konular hakkında yazılarımı ve projelerimi bulabilirsiniz. Ayrıca, benimle iletişime geçmek isterseniz, buradan bana ulaşabilirsiniz.</p>
       <div className="blog-posts">
         {postList.map((post) => (
