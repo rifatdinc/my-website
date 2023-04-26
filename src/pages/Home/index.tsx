@@ -8,7 +8,7 @@ const Home: FC = () => {
 
   return (
     <div className="container">
-      <h2 className='welcome'>Welcome to my React Blog!</h2>
+      <h1>Welcome to my Blog!</h1>
       <p>Merhaba, ben Rifat. Yazılım geliştirme ve veri bilimi alanlarında çalışıyorum. Kendimi sürekli geliştirmeye ve öğrenmeye adadım. Bu site, benim çalışmalarımı ve projelerimi paylaşmak için bir platformdur. Burada, yazılım geliştirme, veri bilimi, makine öğrenimi ve yapay zeka gibi konular hakkında yazılarımı ve projelerimi bulabilirsiniz. Ayrıca, benimle iletişime geçmek isterseniz, buradan bana ulaşabilirsiniz.</p>
       <div className="blog-posts">
         {postList.map((post) => (
